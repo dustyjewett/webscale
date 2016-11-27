@@ -14,6 +14,9 @@ Measure weight using a Stamps.com digital USB postage scale.
     $ npm install webscale
 In the event of installation trouble, refer to the [node-hid documentation](https://github.com/node-hid/node-hid/blob/master/README.md).
 
+On udev machines (Ubuntu, Arch, etc), install the udev rule to give access to the stamps scale:
+    $ npm run install-scale-udev-rule
+
 # Usage
 ```javascript
 var WebScale = require('webscale');
