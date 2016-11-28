@@ -31,7 +31,9 @@ if(program.list) {
     console.error("ERROR: Install must be run as root.");
     process.exit(1)
   }
-  var rule = `SUBSYSTEM=="usb", ATTR{idVendor}=="${program.vendor}", ATTR{idProduct}=="${program.product}", MODE="0776" SYMLINK="stamps_scale"`;
+  var vendor = program.vendor || DEFAULT_VENDOR;
+  var product = program.product || DEFAULT_PRODUCT;
+  var rule = `SUBSYSTEM=="usb", ATTR{idVendor}=="${vendor}", ATTR{idProduct}=="${product}", MODE="0776" SYMLINK="stamps_scale"`;
   var filename = '/etc/udev/rules.d/51-node-webscale.rules';
   var restart = 'service udev restart';
 
