@@ -2,12 +2,18 @@
   "name": "webscale",
   "version": "0.0.3",
   "author": "Dusty Jewett <dusty.jewett@gmail.com> (http://dusty.is)",
-  "contributors": ["Ben Hutchison <ben@aldaviva.com> (http://aldaviva.com)"],
+  "contributors": [
+    "Ben Hutchison <ben@aldaviva.com> (http://aldaviva.com)"
+  ],
   "dependencies": {
+    "commander": "^2.9.0",
     "node-hid": "0.5.2"
   },
   "bin": {
     "install-scale-udev-rule": "./install-scale-udev-rule.js"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   },
   "bugs": {
     "url": "https://github.com/dustyjewett/WebScale/issues"
@@ -18,6 +24,15 @@
   },
   "license": "MIT",
   "description": "Measure weight using a Stamps.com digital USB postage scale.",
-  "keywords": [ "scale", "weigh", "weight", "hid", "usb", "stamps", "stamps.com", "postage" ],
+  "keywords": [
+    "scale",
+    "weigh",
+    "weight",
+    "hid",
+    "usb",
+    "stamps",
+    "stamps.com",
+    "postage"
+  ],
   "homepage": "https://github.com/dustyjewett/WebScale"
 }
