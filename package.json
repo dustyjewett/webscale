@@ -1,13 +1,13 @@
 {
   "name": "webscale",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Dusty Jewett <dusty.jewett@gmail.com> (http://dusty.is)",
   "contributors": [
     "Ben Hutchison <ben@aldaviva.com> (http://aldaviva.com)"
   ],
   "dependencies": {
     "commander": "^2.9.0",
-    "node-hid": "0.5.2"
+    "node-hid": "0.5.4"
   },
   "bin": {
     "install-scale-udev-rule": "./install-scale-udev-rule.js"
